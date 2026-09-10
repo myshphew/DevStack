@@ -1,3 +1,4 @@
+import SelectedTechGrid from "./SelectedTechGrid";
 import TechCard from "./TechCard";
 
 const TechGrid = () => {
@@ -14,6 +15,7 @@ const TechGrid = () => {
         <TechCard />
         <TechCard />
       </div>
+      <SelectedTechGrid/>
     </div>
   );
 };
