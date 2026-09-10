@@ -2,9 +2,13 @@ import type { Tech } from "../type/type";
 
 interface TechCardProps {
   tech: Tech;
+  addStack: (tech: Tech) => void;
+  selectedStacks: Tech[];
 }
 
-const TechCard = ({ tech }: TechCardProps) => {
+const TechCard = ({ tech, addStack, selectedStacks }: TechCardProps) => {
+  const isSelected = selectedStacks.some((stack) => stack.id === tech.id);
+
   return (
     <div
       className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm
@@ -35,10 +39,16 @@ const TechCard = ({ tech }: TechCardProps) => {
       </div>
 
       <button
-        className="mt-3 w-full rounded-md bg-slate-950 py-2.5 text-[10px]
-        font-medium text-white transition hover:bg-slate-800"
+        onClick={() => addStack(tech)}
+        disabled={isSelected}
+        className={`mt-3 w-full rounded-md bg-slate-950 py-2.5 text-[10px]
+        font-medium text-white transition hover:bg-slate-800 ${
+          isSelected
+            ? "cursor-not-allowed bg-slate-200 text-slate-400"
+            : "bg-slate-950 text-white hover:bg-slate-800"
+        }`}
       >
-        Add to Stack
+        {isSelected ? "Added" : "Add to Stack"}
       </button>
     </div>
   );
