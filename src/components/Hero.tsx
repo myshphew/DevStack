@@ -1,4 +1,3 @@
-
 const Hero = () => {
   return (
     <div className="mx-auto container">
@@ -7,7 +6,9 @@ const Hero = () => {
           <h1 className="text-[42px] font-extrabold leading-[1.08] tracking-[-1.5px] text-slate-900 md:text-[52px]">
             Build Your Ideal
           </h1>
-          <h1 className="text-[42px] font-extrabold leading-[1.08] tracking-[-1.5px] text-indigo-500 md:text-[52px]">Development Stack</h1>
+          <h1 className="text-[42px] font-extrabold leading-[1.08] tracking-[-1.5px] text-indigo-500 md:text-[52px]">
+            Development Stack
+          </h1>
 
           <p className="mt-6 max-w-[560px] text-[15px] leading-6 text-slate-500">
             Explore frontend, backend, database, and tooling options, compare
