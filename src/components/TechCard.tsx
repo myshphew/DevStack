@@ -15,7 +15,7 @@ const TechCard = ({ tech, addStack, selectedStacks }: TechCardProps) => {
     transition duration-200 hover:-translate-y-1 hover:shadow-md"
     >
       <div className="mb-4 flex items-start justify-between">
-        <img src={`/public${tech.icon}`} alt="logo"></img>
+        <img src={`/public/tech-icons${tech.icon}`} alt="logo"></img>
         <span
           className={`rounded-full px-2.5 py-1 text-[8px] font-semibold ${tech.badgeColor}`}
         >
