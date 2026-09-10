@@ -1,6 +1,7 @@
 import Nav from "./components/Nav"
 import Hero from "./components/Hero"
 import TechnologiesTitle from "./components/TechnologiesTitle"
+import TechGrid from "./components/TechGrid"
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <Nav/>
       <Hero/>
       <TechnologiesTitle/>
+      <TechGrid/>
     </div>
   )
 }
