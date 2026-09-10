@@ -1,30 +1,37 @@
-const TechCard = () => {
+import type { Tech } from "../type/type";
+
+interface TechCardProps {
+  tech: Tech;
+}
+
+const TechCard = ({ tech }: TechCardProps) => {
   return (
     <div
       className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm
     transition duration-200 hover:-translate-y-1 hover:shadow-md"
     >
       <div className="mb-4 flex items-start justify-between">
-        <img src="/public/tech-icons/React.svg" alt="react-logo"></img>
-        <span className="rounded-full px-2.5 py-1 text-[8px] font-semibold bg-sky-50 text-sky-500">
-          Popular
+        <img src={`/public${tech.icon}`} alt="logo"></img>
+        <span
+          className={`rounded-full px-2.5 py-1 text-[8px] font-semibold ${tech.badgeColor}`}
+        >
+          {tech.badge}
         </span>
       </div>
 
-      <h3 className="text-[15px] font-bold text-slate-800">React</h3>
+      <h3 className="text-[15px] font-bold text-slate-800">{tech.name}</h3>
 
       <p className="mt-2 min-h-[48px] text-[10px] leading-[1.55] text-slate-400">
-        A declarative, component-based JavaScript library for building modern
-        user interfaces.
+        {tech.description}
       </p>
 
       <div
         className="mt-4 flex items-center justify-between border-t border-slate-100
         pt-3 text-[9px] text-slate-400"
       >
-        <span>Frontend</span>
-        <span>Beginner-Friendly</span>
-        <span>⭐ 4.9</span>
+        <span>{tech.category}</span>
+        <span>{tech.level}</span>
+        <span>⭐ {tech.rating}</span>
       </div>
 
       <button

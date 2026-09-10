@@ -1,0 +1,167 @@
+[
+    {
+      "id": 1,
+      "name": "React",
+      "icon": "/tech-icons/React.svg",
+      "badge": "Popular",
+      "badgeColor": "bg-sky-50 text-sky-500",
+      "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
+      "category": "Frontend",
+      "level": "Beginner-Friendly",
+      "rating": 4.9
+    },
+    {
+      "id": 2,
+      "name": "Vue.js",
+      "icon": "/tech-icons/Vue.svg",
+      "badge": "Versatile",
+      "badgeColor": "bg-emerald-50 text-emerald-500",
+      "description": "An approachable, performant, and versatile framework for building web user interfaces.",
+      "category": "Frontend",
+      "level": "Beginner-Friendly",
+      "rating": 4.8
+    },
+    {
+      "id": 3,
+      "name": "Svelte",
+      "icon": "/tech-icons/Svelte.svg",
+      "badge": "Fast",
+      "badgeColor": "bg-orange-50 text-orange-500",
+      "description": "A modern web framework that compiles components into highly optimized JavaScript at build time.",
+      "category": "Frontend",
+      "level": "Intermediate",
+      "rating": 4.8
+    },
+    {
+      "id": 4,
+      "name": "Next.js",
+      "icon": "/tech-icons/Nextjs.svg",
+      "badge": "SSR / Edge",
+      "badgeColor": "bg-purple-50 text-purple-500",
+      "description": "A React framework for building full-stack web applications with server-side rendering and static generation.",
+      "category": "Frontend",
+      "level": "Intermediate",
+      "rating": 4.9
+    },
+    {
+      "id": 5,
+      "name": "Angular",
+      "icon": "/tech-icons/Angular.svg",
+      "badge": "Enterprise",
+      "badgeColor": "bg-red-50 text-red-500",
+      "description": "A powerful TypeScript-based framework for building scalable and feature-rich web applications.",
+      "category": "Frontend",
+      "level": "Intermediate",
+      "rating": 4.7
+    },
+    {
+      "id": 6,
+      "name": "Node.js",
+      "icon": "/tech-icons/Nodejs.svg",
+      "badge": "Standard",
+      "badgeColor": "bg-emerald-50 text-emerald-500",
+      "description": "An asynchronous event-driven JavaScript runtime built on Chrome's V8 JavaScript engine.",
+      "category": "Backend",
+      "level": "Intermediate",
+      "rating": 4.8
+    },
+    {
+      "id": 7,
+      "name": "Express.js",
+      "icon": "/tech-icons/Express.svg",
+      "badge": "Lightweight",
+      "badgeColor": "bg-slate-100 text-slate-500",
+      "description": "A minimal and flexible Node.js web framework for building APIs and server-side applications.",
+      "category": "Backend",
+      "level": "Beginner-Friendly",
+      "rating": 4.7
+    },
+    {
+      "id": 8,
+      "name": "Django",
+      "icon": "/tech-icons/Django.svg",
+      "badge": "Batteries Included",
+      "badgeColor": "bg-green-50 text-green-600",
+      "description": "A high-level Python web framework designed for rapid development and clean, pragmatic applications.",
+      "category": "Backend",
+      "level": "Intermediate",
+      "rating": 4.8
+    },
+    {
+      "id": 9,
+      "name": "PostgreSQL",
+      "icon": "/tech-icons/PostgreSQL.svg",
+      "badge": "Top SQL",
+      "badgeColor": "bg-blue-50 text-blue-500",
+      "description": "A powerful open-source object-relational database system known for reliability and advanced features.",
+      "category": "Database",
+      "level": "Intermediate",
+      "rating": 4.9
+    },
+    {
+      "id": 10,
+      "name": "MongoDB",
+      "icon": "/tech-icons/MongoDB.svg",
+      "badge": "NoSQL",
+      "badgeColor": "bg-green-50 text-green-600",
+      "description": "A document-oriented NoSQL database designed for flexibility, scalability, and developer productivity.",
+      "category": "Database",
+      "level": "Beginner-Friendly",
+      "rating": 4.7
+    },
+    {
+      "id": 11,
+      "name": "Redis",
+      "icon": "/tech-icons/Redis.svg",
+      "badge": "Cache",
+      "badgeColor": "bg-red-50 text-red-500",
+      "description": "An in-memory data structure store commonly used as a cache, database, and message broker.",
+      "category": "Database",
+      "level": "Intermediate",
+      "rating": 4.8
+    },
+    {
+      "id": 12,
+      "name": "TypeScript",
+      "icon": "/tech-icons/TypeScript.svg",
+      "badge": "Essential",
+      "badgeColor": "bg-sky-50 text-sky-500",
+      "description": "A strongly typed programming language built on JavaScript for developing reliable and maintainable applications.",
+      "category": "Language",
+      "level": "Intermediate",
+      "rating": 4.9
+    },
+    {
+      "id": 13,
+      "name": "Tailwind CSS",
+      "icon": "/tech-icons/Tailwind.svg",
+      "badge": "Modern",
+      "badgeColor": "bg-cyan-50 text-cyan-500",
+      "description": "A utility-first CSS framework for rapidly building custom and responsive user interfaces.",
+      "category": "Styling",
+      "level": "Beginner-Friendly",
+      "rating": 4.9
+    },
+    {
+      "id": 14,
+      "name": "Docker",
+      "icon": "/tech-icons/Docker.svg",
+      "badge": "Containers",
+      "badgeColor": "bg-blue-50 text-blue-500",
+      "description": "A platform for building, sharing, and running applications inside lightweight and portable containers.",
+      "category": "DevOps",
+      "level": "Intermediate",
+      "rating": 4.9
+    },
+    {
+      "id": 15,
+      "name": "Java",
+      "icon": "/tech-icons/Java.svg",
+      "badge": "Robust",
+      "badgeColor": "bg-orange-50 text-orange-500",
+      "description": "A secure, object-oriented programming language designed for portability, reliability, and large-scale applications.",
+      "category": "Language",
+      "level": "Intermediate",
+      "rating": 4.6
+    }
+  ]

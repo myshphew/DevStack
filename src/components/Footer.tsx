@@ -1,4 +1,3 @@
-
 const Footer = () => {
   return (
     <div className="border-t border-slate-100 bg-white">
