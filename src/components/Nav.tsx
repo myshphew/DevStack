@@ -2,7 +2,7 @@ import React from "react";
 
 const Nav = () => {
   return (
-    <div className="mx-auto flex h-20 container items-center justify-between px-6">
+    <div className="mx-auto flex h-20 container items-center justify-between">
 
         <a href="#" className="flex items-center gap-2">
             <img src="/public/logo.svg" alt="logo" />
