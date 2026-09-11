@@ -1,15 +1,15 @@
 const Nav = () => {
   return (
     <div className="sticky top-0 z-50 bg-white drop-shadow-xs flex h-20">
-      <div className="mx-auto flex container items-center justify-between px-11">
+      <div className="font-sora mx-auto flex container items-center justify-between px-4 md:px-11">
         <button className="rounded-md p-2 text-slate-600 lg:hidden">
           <img
-            className="h-8 w-8"
-            src="/public/menu.svg"
+            className="h-6 w-6"
+            src={`${import.meta.env.BASE_URL}menu.svg`}
           ></img>
         </button>
         <a href="#" className="flex items-center gap-2">
-          <img src="/public/logo.svg" alt="logo" />
+          <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="logo" />
 
           <span className="text-[20px] font-bold">
             <span className="text-slate-800">Dev </span>
@@ -47,7 +47,7 @@ const Nav = () => {
           </a>
         </div>
 
-        <div className="items-center gap-5 flex">
+        <div className="items-center gap-3 md:gap-5 flex">
           <a
             href="#"
             className="text-sm text-nowrap font-medium text-slate-600"
@@ -57,7 +57,7 @@ const Nav = () => {
 
           <a
             href="#"
-            className="rounded-full bg-indigo-400 px-5 py-2 text-sm text-nowrap font-semibold text-white transition hover:bg-indigo-500"
+            className="rounded-full bg-indigo-400 px-3 md:px-5 py-2 text-xs md:text-sm text-nowrap font-semibold text-white transition hover:bg-indigo-500"
           >
             Sign Up
           </a>

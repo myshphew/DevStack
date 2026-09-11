@@ -40,7 +40,7 @@ const App = () => {
     <div>
       <Nav />
 
-      <div className="container mx-auto flex-col px-11">
+      <div className="container mx-auto flex-col px-8 md:px-11">
         <Hero />
         <TechnologiesTitle />
 

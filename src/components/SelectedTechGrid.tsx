@@ -13,7 +13,7 @@ const SelectedTechGrid = ({
   removeAllStacks,
 }: SelectedTechGridProps) => {
   return (
-    <div className="h-fit rounded-2xl border border-slate-100 bg-white p-5 shadow-xs">
+    <div className="font-sora h-fit rounded-2xl border border-slate-100 bg-white p-5 shadow-xs">
       <h3 className="text-[14px] font-bold text-slate-800">Your Stack</h3>
 
       <p className="mt-2 mb-4 font-sora text-[10px] text-slate-400">

@@ -20,7 +20,7 @@ const TechCard = ({ tech, addStack, selectedStacks }: TechCardProps) => {
       <div className="mb-4 flex items-start justify-between">
         <img
           className="w-8 h-8"
-          src={`${tech.icon}`}
+          src={`${import.meta.env.BASE_URL}${tech.icon}`}
           alt="logo"
         ></img>
         <span
@@ -47,7 +47,7 @@ const TechCard = ({ tech, addStack, selectedStacks }: TechCardProps) => {
         </span>
         <span className="text-xs font-sora">{tech.difficulty}</span>
         <span className="flex gap-1 text-xs font-sora">
-          <img src="/public/ratings.svg"></img>
+          <img src={`${import.meta.env.BASE_URL}ratings.svg`}></img>
           {tech.rating}
         </span>
       </div>

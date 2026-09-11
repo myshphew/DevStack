@@ -8,11 +8,11 @@ interface TechCardProps {
 
 const SelectedTechCard = ({ tech, removeStack }: TechCardProps) => {
   return (
-    <div className="mt-2 flex items-center justify-between rounded-lg border border-slate-200 px-3 py-3">
+    <div className="font-sora mt-2 flex items-center justify-between rounded-lg border border-slate-200 px-3 py-3">
       <div className="flex items-center gap-4">
         <img
           className="h-6 w-6"
-          src={`${tech.icon}`}
+          src={`${import.meta.env.BASE_URL}${tech.icon}`}
           alt="logo"
         ></img>
 

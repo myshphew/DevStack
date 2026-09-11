@@ -1,12 +1,12 @@
 const Hero = () => {
   return (
     <div>
-      <div className="flex flex-col lg:flex-row min-h-105 items-center justify-between lg:gap-8">
+      <div className="font-sora flex flex-col lg:flex-row min-h-105 items-center justify-between lg:gap-8">
         <div className="mt-20">
-          <h1 className="text-4xl font-extrabold leading-[1.08] tracking-[-1.5px] text-slate-900 lg:text-5xl">
+          <h1 className="text-3xl font-extrabold leading-[1.08] tracking-[-1.5px] text-slate-900 lg:text-5xl">
             Build Your Ideal
           </h1>
-          <h1 className="brand-gradient-text text-5xl/tight font-extrabold tracking-[-1.5px] text-transparent lg:text-6xl">
+          <h1 className="brand-gradient-text text-5xl leading-13 font-extrabold tracking-[-1.5px] text-transparent lg:text-6xl">
             Development Stack
           </h1>
 
@@ -34,7 +34,7 @@ const Hero = () => {
         </div>
 
         <div className="w-95 items-center justify-center lg:flex">
-          <img src="/public/hero.png"></img>
+          <img src={`${import.meta.env.BASE_URL}hero.png`}></img>
         </div>
       </div>
     </div>

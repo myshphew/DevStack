@@ -1,11 +1,11 @@
 const Footer = () => {
   return (
-    <div className="mt-12 border-t border-slate-100 bg-white">
+    <div className="font-sora mt-12 border-t border-slate-100 bg-white">
       <div className="container mx-auto px-11">
         <div className="grid grid-cols-1 gap-10 py-12 md:grid-cols-5">
           <div className="md:col-span-2">
             <a href="#" className="flex items-center gap-2">
-              <img className="h-7" src="/logo.svg" alt="Dev Stack logo" />
+              <img className="h-7" src={`${import.meta.env.BASE_URL}logo.svg`} alt="Dev Stack logo" />
 
               <span className="text-md font-bold">
                 <span className="text-slate-800">Dev</span>
