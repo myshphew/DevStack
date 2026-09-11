@@ -1,16 +1,16 @@
 const Hero = () => {
   return (
-    <div className="mx-auto container">
-      <div className="flex min-h-[470px] items-center justify-between gap-12 py-20">
-        <div>
-          <h1 className="text-[42px] font-extrabold leading-[1.08] tracking-[-1.5px] text-slate-900 md:text-[52px]">
+    <div>
+      <div className="flex flex-col lg:flex-row min-h-105 items-center justify-between lg:gap-8">
+        <div className="mt-20">
+          <h1 className="text-4xl font-extrabold leading-[1.08] tracking-[-1.5px] text-slate-900 lg:text-5xl">
             Build Your Ideal
           </h1>
-          <h1 className="text-[42px] font-extrabold leading-[1.08] tracking-[-1.5px] text-indigo-500 md:text-[52px]">
+          <h1 className="brand-gradient-text text-5xl/tight font-extrabold tracking-[-1.5px] text-transparent lg:text-6xl">
             Development Stack
           </h1>
 
-          <p className="mt-6 max-w-[560px] text-[15px] leading-6 text-slate-500">
+          <p className="mt-6 max-w-140 text-[15px] leading-6 text-slate-500">
             Explore frontend, backend, database, and tooling options, compare
             them side by side, and put together the stack that fits your next
             project.
@@ -19,7 +19,7 @@ const Hero = () => {
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="#technologies"
-              className="bg-indigo-500 gradient-button rounded-md px-4 py-2.5 text-[13px] font-semibold text-white shadow-sm transition"
+              className="bg-linear-to-r from-[#53dbf2] to-[#3a7ff2] rounded-md px-4 py-2.5 text-[13px] font-semibold text-white shadow-sm transition"
             >
               Explore Technologies
             </a>
@@ -33,7 +33,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="hidden w-[380px] items-center justify-center lg:flex">
+        <div className="w-95 items-center justify-center lg:flex">
           <img src="/public/Hero Isometric 3D Graphic Column.png"></img>
         </div>
       </div>

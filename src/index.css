@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@theme {
+  --font-sora: "Sora", sans-serif;
+}
+
+@utility brand-gradient-text {
+  background-image: linear-gradient(to right, #53dbf2, #ce9eec, #3a7ff2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

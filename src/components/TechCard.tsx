@@ -1,4 +1,5 @@
 import type { Tech } from "../type/type";
+import { toast } from "react-toastify";
 
 interface TechCardProps {
   tech: Tech;
@@ -11,21 +12,28 @@ const TechCard = ({ tech, addStack, selectedStacks }: TechCardProps) => {
 
   return (
     <div
-      className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm
-    transition duration-200 hover:-translate-y-1 hover:shadow-md"
+      className={`rounded-2xl border ${
+        isSelected ? "border-indigo-300" : "border-slate-100"
+      } bg-white p-5 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md`}
     >
       <div className="mb-4 flex items-start justify-between">
-        <img src={`/public/tech-icons${tech.icon}`} alt="logo"></img>
+        <img
+          className="w-8 h-8"
+          src={`/public/tech-icons${tech.icon}`}
+          alt="logo"
+        ></img>
         <span
-          className={`rounded-full px-2.5 py-1 text-[8px] font-semibold ${tech.badgeColor}`}
+          className={`rounded-full px-2.5 py-1 text-xs font-medium ${tech.badgeColor}`}
         >
           {tech.badge}
         </span>
       </div>
 
-      <h3 className="text-[15px] font-bold text-slate-800">{tech.name}</h3>
+      <h3 className="font-sora text-lg font-bold text-slate-800">
+        {tech.name}
+      </h3>
 
-      <p className="mt-2 min-h-[48px] text-[10px] leading-[1.55] text-slate-400">
+      <p className="font-sora mt-1.5 text-xs/normal text-slate-400">
         {tech.description}
       </p>
 
@@ -33,22 +41,32 @@ const TechCard = ({ tech, addStack, selectedStacks }: TechCardProps) => {
         className="mt-4 flex items-center justify-between border-t border-slate-100
         pt-3 text-[9px] text-slate-400"
       >
-        <span>{tech.category}</span>
-        <span>{tech.level}</span>
-        <span>⭐ {tech.rating}</span>
+        <span className="text-xs font-sora rounded-lg px-2.5 py-1 bg-slate-50">
+          {tech.category}
+        </span>
+        <span className="text-xs font-sora">{tech.difficulty}</span>
+        <span className="flex gap-1 text-xs font-sora">
+          <img src="/src/assets/ratings.svg"></img>
+          {tech.rating}
+        </span>
       </div>
 
       <button
-        onClick={() => addStack(tech)}
-        disabled={isSelected}
-        className={`mt-3 w-full rounded-md bg-slate-950 py-2.5 text-[10px]
-        font-medium text-white transition hover:bg-slate-800 ${
+        onClick={() => {
+          if (!isSelected) {
+            addStack(tech);
+            toast.success("Tech added!");
+          } else {
+            toast.warning("Tech already added!");
+          }
+        }}
+        className={`mt-3 w-full rounded-lg py-3 font-sora text-xs font-medium transition ${
           isSelected
-            ? "cursor-not-allowed bg-slate-200 text-slate-400"
-            : "bg-slate-950 text-white hover:bg-slate-800"
+            ? "cursor-default border border-slate-200 bg-white text-slate-400"
+            : "cursor-pointer bg-indigo-400 text-white hover:bg-indigo-500"
         }`}
       >
-        {isSelected ? "Added" : "Add to Stack"}
+        {isSelected ? "✓ Added" : "Add to Stack"}
       </button>
     </div>
   );
