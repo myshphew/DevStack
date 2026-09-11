@@ -12,7 +12,7 @@ const SelectedTechCard = ({ tech, removeStack }: TechCardProps) => {
       <div className="flex items-center gap-4">
         <img
           className="h-6 w-6"
-          src={`/public/tech-icons${tech.icon}`}
+          src={`${tech.icon}`}
           alt="logo"
         ></img>
 

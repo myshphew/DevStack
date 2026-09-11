@@ -1,6 +1,7 @@
 import type { Tech } from "../type/type";
 import { toast } from "react-toastify";
 
+
 interface TechCardProps {
   tech: Tech;
   addStack: (tech: Tech) => void;
@@ -19,7 +20,7 @@ const TechCard = ({ tech, addStack, selectedStacks }: TechCardProps) => {
       <div className="mb-4 flex items-start justify-between">
         <img
           className="w-8 h-8"
-          src={`/public/tech-icons${tech.icon}`}
+          src={`${tech.icon}`}
           alt="logo"
         ></img>
         <span
@@ -46,7 +47,7 @@ const TechCard = ({ tech, addStack, selectedStacks }: TechCardProps) => {
         </span>
         <span className="text-xs font-sora">{tech.difficulty}</span>
         <span className="flex gap-1 text-xs font-sora">
-          <img src="/src/assets/ratings.svg"></img>
+          <img src="/public/ratings.svg"></img>
           {tech.rating}
         </span>
       </div>

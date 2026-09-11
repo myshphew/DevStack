@@ -34,7 +34,7 @@ const Hero = () => {
         </div>
 
         <div className="w-95 items-center justify-center lg:flex">
-          <img src="/public/Hero Isometric 3D Graphic Column.png"></img>
+          <img src="/public/hero.png"></img>
         </div>
       </div>
     </div>

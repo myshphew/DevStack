@@ -5,7 +5,7 @@ const Nav = () => {
         <button className="rounded-md p-2 text-slate-600 lg:hidden">
           <img
             className="h-8 w-8"
-            src="/src/assets/burger-menu-svgrepo-com.svg"
+            src="/public/menu.svg"
           ></img>
         </button>
         <a href="#" className="flex items-center gap-2">
